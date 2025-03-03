@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Taste of India</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-section {
+            padding: 50px 20px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .services-section p {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            color: #e65100;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .service-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="services-section">
+        <h2>Our Services</h2>
+        <p>At Taste of India, we are dedicated to providing you with an exceptional experience through our wide range of services. Explore the different ways we bring the rich and diverse flavors of India to your table.</p>
+        
+        <div class="services-container">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <h3>Dine-In Experience</h3>
+                <p>Experience the authentic taste of Indian cuisine in our cozy and welcoming ambiance. Our chefs use traditional methods and fresh ingredients to create the best Indian dishes, bringing the vibrant flavors of India right to your table.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <h3>Takeout & Delivery</h3>
+                <p>Craving Indian food at home? Our takeout and delivery services bring the exquisite tastes of our menu straight to your door. Order online and enjoy the flavors of India in the comfort of your home.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <h3>Catering for Events</h3>
+                <p>From weddings to corporate events, we offer a wide variety of Indian delicacies to suit any occasion. Let us cater your event with a feast of flavorful dishes that will leave your guests talking long after the event ends.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
